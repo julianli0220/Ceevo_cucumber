@@ -1,0 +1,10 @@
+# config/cucumber.yml
+##YAML Template
+
+# Browser
+chrome: BROWSER=Chrome
+firefox: BROWSER=Firefox
+safari: BROWSER=Safari
+edge: BROWSER=Edge
+
+default: --no-source --color --format pretty --expand --format html --out Results\Result-<%= Time.now.strftime("%Y%m%d%H%M%S") %>.html
